@@ -31,11 +31,12 @@
 - Computer system can be divided into four components(Refer university notes)
 
 **Kernel**
-- The **kernel** is a core component of an operating system and serves as the main interface between the computer's physical hardware and the processes running on it. 
+- The **kernel** is a core component/heart of an operating system and serves as the main interface between the computer's physical hardware and the processes running on it.
+- The OS is sometimes known as kernel.
 - It acts as a bridge between software applications and the hardware of a computer.
 -  It basically manages operations of memory and CPU time.
 - [Types of kernel](https://www.geeksforgeeks.org/kernel-in-operating-system/)
-    - **Monolithic kernel:** The entire operating system runs as a single program in Kernel mode.The user services and corner services are implemented in the same address space
+    - **Monolithic kernel:** The entire operating system runs as a single program in Kernel mode.The user services and kernel services are implemented in the same address space
     - **Micro kernel:** Here user services are kept inside the user address space and kernel services are kept under the kernel address space.
 - [Monolithic kernel versus micro kernel](https://www.geeksforgeeks.org/difference-between-microkernel-and-monolithic-kernel/)
 - **Modularity** is the concept of breaking down a system into separate components or modules, each with a specific function that operates independently.
@@ -47,9 +48,9 @@
 - Multiprocessor
 
 **Use of multiprocessor over single processor**
-- **Modularity:** Uses modules for each category of task. tasks belonging to same category are parallel processed.
+- **Modularity:** Uses modules for each category of task. Tasks belonging to same category are parallel processed.
 - **Computation speed up:** Multiprocessor has higher throughput and speed than uniprocessor, since it distributes tasks among multiple processors.
-- **Reliability:** In multiprocessor systems, if one processor fails, others can take over its tasks, improving system reliability and reducing the risk of complete system failure.
+- **Reliability/Fault Tolerant:** In multiprocessor systems, if one processor fails, others can take over its tasks, improving system reliability and reducing the risk of complete system failure.
 - **Safety:** Multiprocessor systems enhance safety by allowing critical tasks to be run redundantly on different processors, ensuring consistent and accurate operation even in the event of a fault.
 - **Information Sharing:** Multiple processors can share memory and resources, allowing them to easily exchange information and collaborate on complex tasks, improving efficiency and coordination in workloads.
 
@@ -60,7 +61,7 @@
 2. **Symmetric multiprocessing**
 - Symmetric multiprocessing (SMP) is a multiprocessors system where multiple processors are installed and have an equal access to the system and memory resources of the system.
 - Every processor works individually, while doing its work and communicating with the operating system.
-- Difference between assymetric and symmetric multiprocessing
+- [Difference between assymetric and symmetric multiprocessing](https://www.geeksforgeeks.org/difference-between-asymmetric-and-symmetric-multiprocessing/)
     - Definition
     - Easiness to design
     - Cost
@@ -90,7 +91,7 @@
 **Loosely coupled vs tightly coupled system**
 |Loosely coupled|Tightly coupled system|
 |--|--|
-|1.Here we have individual bus cabinet and peripheral devices for different processors|1.Here we have single bus cabinet and set of peripheral devices for different processors|
+|1.Here we have individual bus, cabinet and peripheral devices for different processors|1.Here we have single bus,cabinet and set of peripheral devices for different processors|
 |2.There is distributed memory in loosely coupled multiprocessor system.|2.There is shared memory, in tightly coupled multiprocessor system.|
 |3.Loosely Coupled Multiprocessor System has low data rate.|3.Tightly coupled multiprocessor system has high data rate.|
 |4.The cost of loosely coupled multiprocessor system is less.|4.Tightly coupled multiprocessor system is more costly.|
