@@ -121,7 +121,15 @@
 **Examples of Batch Operating Systems:** Payroll Systems, Bank Statements, etc.
 
 2. **Multi-Programming Operating System**
-- Multiprogramming Operating Systems can be simply illustrated as more than one program is present in the main memory and any one of them can be kept in execution.
+- Multiprogramming Operating Systems can be simply illustrated as more than one program/jobs is present in the main memory and any one of them can be kept in execution.
+- Since, in general, main memory is too small to
+accommodate all jobs, the jobs are kept initially on the disk in the **job pool**.
+This pool consists of all processes residing on disk awaiting allocation of main
+memory
+- The set of jobs in memory can be a subset of the jobs kept in the job
+pool.
+- The OS picks a job from main memory and executes it till completion.Other jobs in the have to wait for one jo to complete.
+- Hence, though multiprogramming ensures no cpu idleness but lacks responsivenes. 
 - These are tightly coupled
 
 <img src="Images/Screenshot 2024-09-30 114441.png" width="" height="">
@@ -134,9 +142,10 @@
 - Not concerned about responsiveness
 
 3. **Multitasking / Timesharing system**
-- Multitasking Operating System is simply a multiprogramming Operating System with having facility of a Round-Robin Scheduling Algorithm. It can run multiple programs simultaneously.
-- Focuses on responsiveness along with reducing idleness
-- It can be single user multiple task or multiple user multiple task 
+- In Multitasking Operating System is the cpu executes multiple jobs/tasks by switching among them.
+- It switches so frequently that the users
+can interact with each program while it is running.Hence improves reponsiveness along reducing cpu idleness.
+- It generally uses round robin algorithm to switch between tasks.
 
 <img src="Images/Screenshot 2024-09-30 115613.png" width="" height="">
 
