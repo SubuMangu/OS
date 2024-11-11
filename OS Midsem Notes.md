@@ -17,13 +17,16 @@
 - **Firmware** is a type of software that's embedded in a device's hardware to help it function. It's often called "software for hardware".Firmware is specific to a particular device, while software is more versatile and can be used across a variety of devices
 
 - **BIOS (basic input/output system)** is the program/firmware a computer's microprocessor that uses to start the computer system after it is powered on.
+- BIOS has several components:POST, Bootstrap Loader, Drivers(interfaces between OS and hardware),CMOS Setup(Configuration program that allows users to configure hardware settings )
 - BIOS perform POST to check if all the necessary hardwares are connected before starting the computers system.
 
 - **BIOS initialization** is the process that occurs when a computer is first turned on and the BIOS (Basic Input/Output System) takes control of the system.Hence,BIOS is the first software that runs in computer.
+- UEFI is more preferable than BIOS nowadays(To be discussed later)
 
 - **POST(Power on self test):** Self diagnostic test/is a set of diagnostic tests that a computer runs after it's turned on to check that all its components are working properly.
 
 - The **bootstrap** program is the first code that runs when a computer starts, and it's responsible for loading the OS into memory. Typically stored in ROM or EPROM.
+- Bootstrap program is loaded in memory by **Bootstrap Loader** in BIOS.
 
 - Computer system can be divided into four components(Refer university notes)
 
