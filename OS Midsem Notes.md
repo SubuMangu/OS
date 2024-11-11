@@ -18,7 +18,7 @@
 
 - **BIOS (basic input/output system)** is the program/firmware a computer's microprocessor uses to start the computer system after it is powered on.
 
--**BIOS initialization** is the process that occurs when a computer is first turned on and the BIOS (Basic Input/Output System) takes control of the system
+- **BIOS initialization** is the process that occurs when a computer is first turned on and the BIOS (Basic Input/Output System) takes control of the system
 
 - **POST(Power on self test):** Self diagnostic test/is a set of diagnostic tests that a computer runs after it's turned on to check that all its components are working properly.
 
