@@ -16,9 +16,10 @@
 
 - **Firmware** is a type of software that's embedded in a device's hardware to help it function. It's often called "software for hardware".Firmware is specific to a particular device, while software is more versatile and can be used across a variety of devices
 
-- **BIOS (basic input/output system)** is the program/firmware a computer's microprocessor uses to start the computer system after it is powered on.
+- **BIOS (basic input/output system)** is the program/firmware a computer's microprocessor that uses to start the computer system after it is powered on.
+- BIOS perform POST to check if all the necessary hardwares are connected before starting the computers system.
 
-- **BIOS initialization** is the process that occurs when a computer is first turned on and the BIOS (Basic Input/Output System) takes control of the system
+- **BIOS initialization** is the process that occurs when a computer is first turned on and the BIOS (Basic Input/Output System) takes control of the system.Hence,BIOS is the first software that runs in computer.
 
 - **POST(Power on self test):** Self diagnostic test/is a set of diagnostic tests that a computer runs after it's turned on to check that all its components are working properly.
 
