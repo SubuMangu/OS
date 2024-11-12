@@ -386,7 +386,7 @@ fundamental models of interprocess communication: **shared memory** and **messag
 - Communication in shared memory model has the following components:
 1. **Producer process:** produces information
 2. **Consumer process** consumes information
-3 **Buffer:** Temporary memory space where information is stored temporarily
+3. **Buffer:** Temporary memory space where information is stored temporarily
 - Bufferng is of 3 types: Zero,bounded,unbounded(Refer notebook)
 - In case of zero buffering both producer and consumer are dependent on each other at each instance of time.
 - The code for accessing and manipulating the shared
