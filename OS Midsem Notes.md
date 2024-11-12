@@ -339,7 +339,7 @@ has a pid of 1) serves as the root parent process for all user processes.
 - Once the
 system has booted, the init process can also create various user processes, such
 as a web or print server, an ssh server, and the like.
-- **Resource sharing:**child process will
+- **Resource sharing:** child process will
 need certain resources (CPU time, memory, files, I/O devices) to accomplish
 its task. A child process may be able to obtain its resources directly from
 the operating system, or it may be constrained to a subset of the resources
