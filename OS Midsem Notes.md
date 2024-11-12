@@ -245,7 +245,7 @@ can interact with each program while it is running.Hence improves reponsiveness 
 - program in its execution stage is called a **process**
 
 **Process States**
-1. **New:**The process is being created
+1. **New:** The process is being created
 2. **Running:** Instructions are being executed.
 3. **Waiting:** The process is waiting for some event to occur (such as an I/O
 completion or reception of a signal).
