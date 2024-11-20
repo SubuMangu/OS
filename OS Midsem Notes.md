@@ -128,7 +128,7 @@ This pool consists of all processes residing on disk awaiting allocation of main
 memory
 - The set of jobs in memory can be a subset of the jobs kept in the job
 pool.
-- The OS picks a job from main memory and executes it till completion.Other jobs in the have to wait for one jo to complete.
+- The OS picks a job from main memory and executes it till completion.Other jobs in the have to wait for one job to complete.
 - Hence, though multiprogramming ensures no cpu idleness but lacks responsivenes. 
 - These are tightly coupled
 
@@ -173,17 +173,19 @@ can interact with each program while it is running.Hence improves reponsiveness 
 - It is of three types:
     1. **Hard real time:**
     - Here deadline is mandatory otherwise disastrous event will happen.
+    - if a deadline is missed, the system will fail.
 
     Eg;Flight controller systems
 
     2. **Soft real time:**
     - Here deadline is desirable.
     - Missing the deadline doesn't cause disastrous event but it decreases the usefulness of output.
+    - the system continues to function even if a deadline is missed, but with lower quality output.
 
     Eg, Live screening, Video calling
     
     3. **Firm real time:**
-    - It is similar to soft real time, but it uses logical time instead of physical time.
+    - A firm is stricter than soft realtime, where a small number of missed deadlines can be tolerated.
 
     Eg,Online trading system,Online auction system,Online reservation system
 - **Physical Time:** It refers to the quantitative time that is being measured by clock.
