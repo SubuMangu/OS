@@ -197,6 +197,7 @@ can interact with each program while it is running.Hence improves reponsiveness 
 
 **System Calls**
 ---
+- It basically changes from user mode to kernel mode.
 - It provides an interface to the services made available by operating system/kernel.
 - These calls are available as routines, mostly written in C/C++
 - In Unix Systems there are many system call functions which can be directly used in code whereas in other operating systems we need APIs.
