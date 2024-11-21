@@ -214,8 +214,11 @@ call interface that serves as the link to system calls made available by the
  maintains a table indexed according to these numbers.
  - The system call interface  then invokes the intended system call in the operating-system kernel and
  returns the status of the system call and any return values.
- - 
-
+ - Typically,
+ a number is associated with each system call, and the system-call interface
+ maintains a table indexed according to these numbers.
+ - The system call interface then invokes the intended system call in the operating-system kernel and
+ returns the status of the system call and any return values.
 
 - There are five types of system call based on the services they provide:
 1. **Process control**
@@ -313,7 +316,7 @@ allocated to the process, a list of open files, and so on
 7. **Running → Exit → Terminated**:  
    - After the process finishes its execution, it moves to the terminated state, meaning it is completed and done.
 
-- **Schedulers:** Select a process from the ready queue.
+- **Schedulers:** Select a process from queue(ready queue,job queue).
 - **Dispatchers:** Assigns a process to the operating system.
 
 **Waiting vs Interrupt**
@@ -343,6 +346,22 @@ to execute
 
 **Schedulers**
 - **Schedulers:** Select a process from the ready queue.
+- There exists 3 types of schedulers:
+1. **Long Term Schedulers/Job Scheduler**
+- Selects a process from job queue and loads them into memory for execution.
+- The long-term scheduler executes much less frequently; minutes may sep
+arate the creation of one new process and the next.
+- The long-term scheduler
+ controls the degree of multiprogramming (the number of processes in mem
+ory).
+- If the degree of multiprogramming is stable, then the average rate of
+ process creation must be equal to the average departure rate of processes
+ leaving the system. Thus, the long-term scheduler may need to be invoked
+ only when a process leaves the system.
+-  It is
+ important that the long-term scheduler select a good process mix of I/O-bound
+ and CPU-bound processes.
+-  and allocates the CPU to one of them
 - Refer your notebook
 
 - Operation on a process are of two types:**Process creation** and **process termination**
