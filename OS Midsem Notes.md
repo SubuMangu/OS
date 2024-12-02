@@ -203,22 +203,13 @@ can interact with each program while it is running.Hence improves reponsiveness 
 - In Unix Systems there are many system call functions which can be directly used in code whereas in other operating systems we need APIs.
 
 <img src="Images/Screenshot 2024-09-30 124455.png" width="" height="">
--  For most programming languages, the run-time support system (a set of
- functions built into libraries included with a compiler) provides a system
-call interface that serves as the link to system calls made available by the
- operating system. 
- -  The system-call interface intercepts function calls in the API
- and invokes the necessary system calls within the operating system. 
- - Typically,
- a number is associated with each system call, and the system-call interface
- maintains a table indexed according to these numbers.
- - The system call interface  then invokes the intended system call in the operating-system kernel and
- returns the status of the system call and any return values.
- - Typically,
- a number is associated with each system call, and the system-call interface
- maintains a table indexed according to these numbers.
- - The system call interface then invokes the intended system call in the operating-system kernel and
- returns the status of the system call and any return values.
+
+-  For most programming languages, the run-time support system (a set of functions built into libraries included with a compiler) provides a system call interface that serves as the link to system calls made available by the operating system. 
+-  The system-call interface intercepts function calls in the API and invokes the necessary system calls within the operating system. 
+- Typically, a number is associated with each system call, and the system-call interface maintains a table indexed according to these numbers.
+- The system call interface  then invokes the intended system call in the operating-system kernel and returns the status of the system call and any return values.
+- Typically,a number is associated with each system call, and the system-call interface maintains a table indexed according to these numbers.
+ - The system call interface then invokes the intended system call in the operating-system kernel and returns the status of the system call and any return values.
 - Often, more information like the parameters are required than simply the identity of the desired system call.
 - The simplest approach is to pass the parameters in registers.
 - In some cases, however, there may be more parameters than registers.
@@ -226,7 +217,6 @@ call interface that serves as the link to system calls made available by the
 - This is the approach taken by Linux and Solaris.
 - Parameters also can be placed, or pushed, onto the stack by the program and popped off thestackbythe operating system.
 - Some operating systems prefer the block or stack method because those approaches do not limit the number or length of parameters being passed.
-- 
 - There are five types of system call based on the services they provide:
 1. **Process control**
 - It is responsible for creating,managing and terminating processes.
